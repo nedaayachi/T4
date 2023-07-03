@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+         Task4
+        </title>
+        <meta
+        charset="UTF_8">
+        <link type="image/x-icon" rel="icon" href="donuts.jpg">
+        <style>
+           .body
+           {background: #F986C7;
+            animation-name : target ;
+            animation-iteration-count :infinite;
+animation-duration :    3s ;
+           }@keyframes target {
+            from {
+background:rgb(186, 9, 103) ;
+}
+to{
+    background: #F986C7;
+}}
+           .container
+            { background-color: white;
+                width: 1160px;
+                height: 560px;
+               border: 2px solid mediumvioletred;
+               position: absolute;
+               left: 50%;
+               top:50%;
+               transform: translate(-50%,-50%);
+               display: grid;
+               grid-template-rows: repeat(10,55px);
+                grid-template-columns: repeat(12,95.75px);
+                gap: 1px; 
+                padding: 3px;
+                grid-template-areas: 
+                "i1 i2 i2 i2 i2 i2 i2 i2 i2 i2 i2 i3"
+                "i1 i4 i4 i4 i4 i4 i4 i5 i5 i5 i5 i3 "
+                "i1 i4 i4 i4 i4 i4 i4 i5 i5 i5 i5 i3 "
+               " i1 i4 i4 i4 i4 i4 i4 i5 i5 i5 i5 i3 "
+               "i1 i4 i4 i4 i4 i4 i4 i5 i5 i5 i5 i3 "
+               "i1 i4 i4 i4 i4 i4 i4 i5 i5 i5 i5 i3 "
+               "i1 i6 i6 i6 i6 i6 i7 i7 i7 i7 i7 i3"
+               "i1 i6 i6 i6 i6 i6 i7 i7 i7 i7 i7 i3"
+               "i1 i6 i6 i6 i6 i6 i7 i7 i7 i7 i7 i3"
+               "i1 i6 i6 i6 i6 i6 i7 i7 i7 i7 i7 i3"}
+               
+            .item1{
+                background: white;
+            
+           
+            grid-area: i1;
+            
+            
+           
+            }
+            .item2{
+                background: white;
+                display: flex;
+                grid-area: i2;
+                flex-direction: left;
+                flex-wrap: wrap;
+                justify-content: end;
+                gap:10px;
+               
+                
+            }
+           .item2::before
+           {
+            content: "DONUTS ";
+            color: mediumvioletred;
+            font-size: 45px;
+            font-weight: 300;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position: absolute;
+            height: 30px;
+            text-align:left ;
+            margin-right: 804PX;
+            margin-top: 3px;
+            text-decoration: solid;
+            
+           
+            
+           }
+           .at{ font-size: 17px;
+            font-weight: 300;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: mediumvioletred;
+            text-decoration: double;
+           
+            margin-top: 16px;
+
+           }
+            .item3{
+                background: white;
+                grid-area: i3;
+        
+            }
+            .item4{
+                background:white;
+                grid-area: i4;
+                background-image: url("F.jpg");
+                background-repeat: no-repeat;
+                border-radius: 2px;
+                
+               
+                
+             
+                
+            }
+            .item5{  background:white;
+                grid-area: i5;
+
+            }
+            .item5 h1{
+                color: #6b25bb;
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 40px;
+                text-decoration:dashed;
+                text-align: justify;
+
+           
+            }
+            .item5 p
+            {
+                font-size: 22px;
+                text-align: left;
+                font-family:Arial, Helvetica, sans-serif;
+                color:#1c0f2a.
+                
+            }
+             
+            .item6{
+                background: white;
+                grid-area: i6;
+                background-image: url("PET.jpg");
+           
+            }
+            .item6 img
+            {
+             margin-top: 18px;
+             margin-left: 30px;
+             border: white solid;
+            }
+             
+            .item7{
+                background: rgba(238, 80, 180, 0.854);
+                grid-area: i7;
+           
+            }
+            #sale
+            {
+                margin-top: 30px;
+             margin-left: 5.5px;
+            }
+            .item7 h1
+            {  color: white;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: 50px;
+                text-decoration:dashed;
+                text-align: justify;
+                margin-right: 60px;
+                margin-left: 10px;
+                margin-top:80px;
+            }
+            .item7 h3
+            {  color: rgb(96, 22, 22);
+                font-family:Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                text-decoration:dashed;
+                text-align: justify;
+                margin-right: -60px;
+                margin-left: 10px;
+                margin-top:-20px;
+            }
+             
+               
+              
+              
+             
+               
+            
+          
+
+        </style>
+    </head>
+    <body class="body">
+       
+            <div class="container">
+                <div class="item1 item">
+                  
+                </div>
+                
+                
+                
+                <div class="item2 item">  
+                    
+                    <div class="it1 at">HOME</div>
+                <div class="it2  at">ABOUT </div>
+                <div class="it3 at">ORDER</div>
+                <div class="it4 at">CONTACT </div>
+            
+            </div>
+                
+                
+                
+                <div class="item3 item"></div>
+                <div class="item4 item">
+                </div>
+                <div class="item5 item">
+                    <h1 id="1">FAN OF DONUTS</h1>
+                  <p>Handmade donuts with  an  incredible variety of toppings and toppings without the use of artificial additives colors or flavors.</p>
+                 
+
+                    <p></p>
+                </div>
+                <div class="item6 item">
+                    <img  src="cat.jpg"   width="   130" length="190" />
+                    <img src="yu.jpg"   width="   270" length="190" />
+                    
+                    
+
+                </div>
+                <div class="item7 item">
+                  <h1>Enjoy every bite!</h1>
+                  <h3>Welcome sweety.</h3>
+                    
+        </div>
+
+    </body>
